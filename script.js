@@ -31,8 +31,8 @@ console.log(parseInt("ciao"));
 document.getElementById("submit").addEventListener('click',
     function sortSurname() {
         mysurname = document.getElementById("surname-label").value;
-        console.log(parseInt(mysurname));
-        if(parseInt(mysurname) == NaN){
+        //add filter for numeric charapter
+        if(!isNaN(parseInt(mysurname))){
             alert("only alphabetic charapter accepted");
         }else {
             surname.push(mysurname);
